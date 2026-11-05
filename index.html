@@ -9,6 +9,22 @@
       content="Portfolio website for John Eduard Ross, a web developer focused on modern, user-centered digital experiences."
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .tag-logo {
+        width: 2.2rem;
+        height: 2.2rem;
+        min-width: 2.2rem;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .tag-item {
+        gap: 0.7rem;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -44,7 +60,7 @@
               <span class="gradient-text">fast, clean, and easy to use.</span>
             </h1>
             <p class="lead">
-              Hey, I’m John Eduard Ross — a web developer who loves turning ideas into websites that look good, work smoothly, and actually help people take action.
+              Hey, I’m John — a web developer who loves turning ideas into websites that look good, work smoothly, and actually help people take action.
             </p>
             <div class="hero-actions">
               <a
@@ -58,26 +74,12 @@
               <a href="tel:+639564124332" class="button-secondary">Call +63 956 412 4332</a>
             </div>
             <p class="lead contact-note">This number is also available on Viber and WhatsApp.</p>
-            <div class="stats" aria-label="Key statistics">
-              <div class="stat">
-                <strong>6+</strong>
-                <span>Years Experience</span>
-              </div>
-              <div class="stat">
-                <strong>32</strong>
-                <span>Projects</span>
-              </div>
-              <div class="stat">
-                <strong>12</strong>
-                <span>Happy Clients</span>
-              </div>
-            </div>
           </div>
 
           <div class="profile-card">
             <div class="profile-photo" aria-label="Profile illustration">
               <img
-                src="assets/myportrait.jpg"
+                src="assets/myportrait3.jpg"
                 alt="Web developer wearing casual grey long sleeves"
               />
               <div class="mini-badge">Available for freelance work</div>
@@ -114,6 +116,19 @@
               </p>
             </div>
           </div>
+
+          <div class="about-stats" aria-label="Key statistics">
+            <div class="about-stat">
+              <span>Experience</span>
+              <strong>8+</strong>
+              <small>Years building polished digital experiences</small>
+            </div>
+            <div class="about-stat accent">
+              <span>Projects</span>
+              <strong>30+</strong>
+              <small>Sites, landing pages, and funnels shipped</small>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -129,72 +144,111 @@
           <div class="skills-layout">
             <div class="skills-group reveal">
               <h3>Languages &amp; Scripting</h3>
-              <div class="tag-list">
-                <span>JavaScript (ES6+)</span>
-                <span>TypeScript</span>
-                <span>Vanilla JS</span>
-                <span>jQuery</span>
-                <span>Ajax</span>
-                <span>Vue.js</span>
-                <span>PHP</span>
-                <span>Liquid</span>
-                <span>Ruby</span>
+              <div class="tag-slider">
+                <div class="tag-track">
+                  <div class="tag-item"><span class="tag-logo logo-js">JS</span><span>JavaScript</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ts">TS</span><span>TypeScript</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-vue">V</span><span>Vue.js</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-php">PHP</span><span>PHP</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-liquid">L</span><span>Liquid</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ruby">Rb</span><span>Ruby</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-js">JS</span><span>JavaScript</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ts">TS</span><span>TypeScript</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-vue">V</span><span>Vue.js</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-php">PHP</span><span>PHP</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-liquid">L</span><span>Liquid</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ruby">Rb</span><span>Ruby</span></div>
+                </div>
               </div>
             </div>
 
             <div class="skills-group reveal">
               <h3>AI Tools</h3>
-              <div class="tag-list">
-                <span>Gemini</span>
-                <span>Copilot</span>
-                <span>GPT</span>
+              <div class="tag-slider">
+                <div class="tag-track">
+                  <div class="tag-item"><span class="tag-logo logo-gemini">G</span><span>Gemini</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-copilot">C</span><span>Copilot</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-gpt">GPT</span><span>GPT</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-claude">AI</span><span>Claude</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-gemini">G</span><span>Gemini</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-copilot">C</span><span>Copilot</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-gpt">GPT</span><span>GPT</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-claude">AI</span><span>Claude</span></div>
+                </div>
               </div>
             </div>
 
             <div class="skills-group reveal">
               <h3>Styling &amp; Frameworks</h3>
-              <div class="tag-list">
-                <span>CSS3</span>
-                <span>SCSS / SASS</span>
-                <span>Tailwind CSS</span>
-                <span>Bootstrap</span>
+              <div class="tag-slider">
+                <div class="tag-track">
+                  <div class="tag-item"><span class="tag-logo logo-css">CSS</span><span>CSS3</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-scss">S</span><span>SCSS</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-tailwind">T</span><span>Tailwind</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-bootstrap">B</span><span>Bootstrap</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-css">CSS</span><span>CSS3</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-scss">S</span><span>SCSS</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-tailwind">T</span><span>Tailwind</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-bootstrap">B</span><span>Bootstrap</span></div>
+                </div>
               </div>
             </div>
 
             <div class="skills-group reveal">
               <h3>CMS &amp; Builders</h3>
-              <div class="tag-list">
-                <span>Shopify Plus</span>
-                <span>WordPress</span>
-                <span>ACF</span>
-                <span>Webflow</span>
-                <span>Elementor</span>
-                <span>Bricks Builder</span>
-                <span>Divi</span>
-                <span>Duda</span>
+              <div class="tag-slider">
+                <div class="tag-track">
+                  <div class="tag-item"><span class="tag-logo logo-shopify">S</span><span>Shopify</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-wp">WP</span><span>WordPress</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-acf">ACF</span><span>ACF</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-webflow">W</span><span>Webflow</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-elementor">E</span><span>Elementor</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-bricks">Br</span><span>Bricks</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-shopify">S</span><span>Shopify</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-wp">WP</span><span>WordPress</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-acf">ACF</span><span>ACF</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-webflow">W</span><span>Webflow</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-elementor">E</span><span>Elementor</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-bricks">Br</span><span>Bricks</span></div>
+                </div>
               </div>
             </div>
 
             <div class="skills-group reveal">
               <h3>Design &amp; Prototyping</h3>
-              <div class="tag-list">
-                <span>Figma</span>
-                <span>Adobe Photoshop</span>
-                <span>Adobe Illustrator</span>
-                <span>Brand Identity Design</span>
+              <div class="tag-slider">
+                <div class="tag-track">
+                  <div class="tag-item"><span class="tag-logo logo-figma">F</span><span>Figma</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ps">Ps</span><span>Photoshop</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ai">Ai</span><span>Illustrator</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-brand">ID</span><span>Brand Design</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-figma">F</span><span>Figma</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ps">Ps</span><span>Photoshop</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ai">Ai</span><span>Illustrator</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-brand">ID</span><span>Brand Design</span></div>
+                </div>
               </div>
             </div>
 
             <div class="skills-group reveal">
               <h3>DevOps &amp; Infrastructure</h3>
-              <div class="tag-list">
-                <span>Git</span>
-                <span>VS Code</span>
-                <span>FTP / SFTP</span>
-                <span>MySQL</span>
-                <span>MSSQL</span>
-                <span>cPanel</span>
-                <span>DNS Configuration</span>
+              <div class="tag-slider">
+                <div class="tag-track">
+                  <div class="tag-item"><span class="tag-logo logo-git">G</span><span>Git</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-vscode">V</span><span>VS Code</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ftp">FTP</span><span>FTP / SFTP</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-mysql">SQL</span><span>MySQL</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-mssql">M</span><span>MSSQL</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-cpanel">CP</span><span>cPanel</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-dns">DNS</span><span>DNS</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-git">G</span><span>Git</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-vscode">V</span><span>VS Code</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-ftp">FTP</span><span>FTP / SFTP</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-mysql">SQL</span><span>MySQL</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-mssql">M</span><span>MSSQL</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-cpanel">CP</span><span>cPanel</span></div>
+                  <div class="tag-item"><span class="tag-logo logo-dns">DNS</span><span>DNS</span></div>
+                </div>
               </div>
             </div>
           </div>
