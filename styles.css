@@ -277,12 +277,14 @@ h1 {
   position: relative;
 }
 
-.profile-photo::before {
-  content: "JR";
-  font-size: clamp(5rem, 10vw, 8rem);
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  color: rgba(17, 24, 39, 0.08);
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 470px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: saturate(0.8) contrast(1.05) brightness(0.95);
 }
 
 .mini-badge {
@@ -535,29 +537,7 @@ footer {
 }
 
 .floating-cta-stack {
-  position: fixed;
-  right: 1.2rem;
-  bottom: 1.4rem;
-  z-index: 40;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(18px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-body.scrolled .floating-cta-stack {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-body.scrolled .nav-actions {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-12px);
+  display: none;
 }
 
 .floating-cta {
@@ -616,8 +596,23 @@ body.scrolled .nav-actions {
   }
 
   .floating-cta-stack {
+    position: fixed;
     right: 0.8rem;
     bottom: 0.9rem;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(18px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  body.scrolled .floating-cta-stack {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .floating-cta {
