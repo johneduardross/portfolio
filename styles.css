@@ -1,15 +1,15 @@
 :root {
-  --bg: #0b1020;
-  --bg-alt: #111827;
-  --panel: rgba(17, 24, 39, 0.88);
-  --panel-strong: #111827;
-  --text: #edf3ff;
-  --muted: #a8b3c7;
-  --primary: #7dd3fc;
-  --primary-soft: rgba(125, 211, 252, 0.12);
-  --accent: #7ae7c7;
-  --border: rgba(148, 163, 184, 0.18);
-  --shadow: 0 24px 60px rgba(2, 6, 23, 0.46);
+  --bg: #120f12;
+  --bg-alt: #1b1519;
+  --panel: rgba(27, 21, 25, 0.86);
+  --panel-strong: #231d20;
+  --text: #fff3ea;
+  --muted: #d9c4b8;
+  --primary: #f8a77b;
+  --primary-soft: rgba(248, 167, 123, 0.14);
+  --accent: #ffcc97;
+  --border: rgba(255, 204, 151, 0.15);
+  --shadow: 0 24px 60px rgba(18, 15, 18, 0.52);
 }
 
 * {
@@ -24,8 +24,8 @@ body {
   margin: 0;
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(125, 211, 252, 0.12), transparent 24%),
-    radial-gradient(circle at bottom right, rgba(122, 231, 199, 0.1), transparent 18%),
+    radial-gradient(circle at top left, rgba(248, 167, 123, 0.12), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(255, 204, 151, 0.08), transparent 18%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
   color: var(--text);
   line-height: 1.7;
@@ -103,9 +103,9 @@ header {
 
 .nav-cta-primary,
 .floating-cta-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, #93c5fd 100%);
-  color: #07111d;
-  box-shadow: 0 18px 26px rgba(125, 211, 252, 0.24);
+  background: linear-gradient(135deg, var(--primary) 0%, #ffbf80 100%);
+  color: #1c120f;
+  box-shadow: 0 18px 26px rgba(248, 167, 123, 0.2);
 }
 
 .nav-cta-secondary,
@@ -156,9 +156,9 @@ header {
 }
 
 .cta {
-  background: linear-gradient(135deg, var(--primary) 0%, #93c5fd 100%);
-  color: #07111d;
-  box-shadow: 0 16px 30px rgba(125, 211, 252, 0.18);
+  background: linear-gradient(135deg, var(--primary) 0%, #ffbf80 100%);
+  color: #1c120f;
+  box-shadow: 0 16px 30px rgba(248, 167, 123, 0.18);
 }
 
 .cta:hover,
@@ -267,7 +267,7 @@ h1 {
 }
 
 .profile-photo {
-  background: linear-gradient(135deg, rgba(31, 111, 235, 0.1), rgba(124, 212, 193, 0.18));
+  background: linear-gradient(135deg, rgba(248, 167, 123, 0.15), rgba(255, 204, 151, 0.1));
   border-radius: 22px;
   min-height: 470px;
   display: flex;
@@ -348,7 +348,7 @@ h2 {
 .contact-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
-  border-color: rgba(31, 111, 235, 0.16);
+  border-color: rgba(248, 167, 123, 0.18);
 }
 
 .panel {
@@ -415,8 +415,8 @@ h2 {
   align-items: center;
   border-radius: 999px;
   padding: 0.5rem 0.8rem;
-  background: rgba(125, 211, 252, 0.08);
-  border: 1px solid rgba(125, 211, 252, 0.16);
+  background: rgba(255, 204, 151, 0.08);
+  border: 1px solid rgba(255, 204, 151, 0.14);
   color: var(--text);
   font-size: 0.88rem;
   font-weight: 500;
@@ -434,12 +434,12 @@ h2 {
 
 .project-thumb {
   min-height: 220px;
-  background: linear-gradient(135deg, rgba(31, 111, 235, 0.14), rgba(124, 212, 193, 0.18));
+  background: linear-gradient(135deg, rgba(248, 167, 123, 0.18), rgba(255, 204, 151, 0.12));
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  color: rgba(17, 24, 39, 0.6);
+  color: rgba(255, 243, 234, 0.7);
   border-bottom: 1px solid var(--border);
 }
 
