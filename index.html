@@ -24,6 +24,29 @@
       .tag-item {
         gap: 0.7rem;
       }
+
+      .certification-card-link {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+      }
+
+      .certification-thumb {
+        padding: 0;
+        overflow: hidden;
+        aspect-ratio: auto;
+        width: 100%;
+        height: auto;
+      }
+
+      .certification-thumb img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     </style>
   </head>
   <body>
@@ -34,6 +57,7 @@
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Work</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="nav-actions">
@@ -301,6 +325,58 @@
                   <a href="#">Live Demo</a>
                   <a href="#">Code</a>
                 </div> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="reveal">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="section-tag">Certifications</div>
+              <h2>Credentials that support my skills and continuous growth.</h2>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <a
+              href="https://drive.google.com/file/d/1cgVsVgIAF0_0IchXxcdLhzD0U5BMVu1H/view?usp=sharing"
+              class="project-card certification-card-link reveal"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Open GoHighLevel Workshop certificate"
+            >
+              <div class="project-thumb certification-thumb">
+                <img
+                  src="assets/Cert-GHL.jpg"
+                  alt="GoHighLevel Workshop certificate"
+                  onerror="this.onerror=null;this.src='assets/Cert-GHL.png';"
+                />
+              </div>
+              <div class="project-content">
+                <div class="project-tag">Certificate of Participation</div>
+                <h3>GoHighLevel Workshop</h3>
+                <p>Excelerate Digital Marketing</p>
+              </div>
+            </a>
+
+            <article class="project-card reveal">
+              <div class="project-thumb">02</div>
+              <div class="project-content">
+                <div class="project-tag">...</div>
+                <h3>...</h3>
+                <p>Issued by: ...</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-thumb">03</div>
+              <div class="project-content">
+                <div class="project-tag">...</div>
+                <h3>...</h3>
+                <p>Issued by: ...</p>
               </div>
             </article>
           </div>
